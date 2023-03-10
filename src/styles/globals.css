@@ -2,11 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    background: #F0F2F5;
+    font-family: "fontRegular"
+    /* height: 100vh; */
+}
 
 @font-face {
     font-family: "fontBlack";
     src: url('../../Fonts/SF-Pro-Display-Black.ttf');
-
 }
 
 @font-face {
