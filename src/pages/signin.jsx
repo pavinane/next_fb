@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCirclePlus,faClose } from "@fortawesome/free-solid-svg-icons";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import { useRouter } from "next/router";
 
 
 
@@ -85,11 +86,12 @@ const Signin = () => {
     console.log(e);
   };
 
+  const router = useRouter()
+
   const handleLoginSubmit = (e) => {
     console.log(e);
+    router.push('home')
   };
-
-  
 
 
   return (
